@@ -1,11 +1,148 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practica de inițiere RC-241</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background-color: #007acc;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      position: relative;
+    }
+    .title {
+      font-size: 20px;
+      text-align: center;
+      flex: 1;
+    }
+    .corner {
+      position: absolute;
+      font-size: 12px;
+    }
+    .top-left {
+      left: 10px;
+    }
+    .top-right {
+      right: 10px;
+    }
+    .container {
+      padding: 20px;
+    }
+    .inputs {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 30px;
+    }
+    input, select {
+      padding: 8px;
+      font-size: 16px;
+      width: 100%;
+    }
+    .select-group {
+      text-align: center;
+      width: 100%;
+    }
+    .images {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+    .images img {
+      width: 32%;
+      height: auto;
+    }
+    .round-button {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 1px solid #333;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+    .checkbox-group {
+        display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+  margin-top: 10px;
+    }
+    footer {
+      background-color: #007acc;
+      color: white;
+      position: relative;
+      padding: 30px;
+      margin-top: 50px;
+    }
+    .footer-left {
+      position: absolute;
+      left: 10px;
+      bottom: 10px;
+      font-size: 17;
+    }  
+    .footer-right {
+      position: absolute;
+      right: 10px;
+      bottom: 10px;
+      font-size: 17px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
+  <nav>
+    <span class="corner top-left">Cereteu Dumitru</span>
+    <div class="title">Practica de inițiere RC-241</div>
+    <span class="corner top-right">Cereteu Dumitru</span>
+  </nav>
+
+  <div class="container">
+    <div class="inputs">
+      <input type="password" placeholder="password" onclick="this.placeholder=''">
+
+      <div class="select-group">
+        <label for="mediu">Mediu/importanță</label>
+        <select id="mediu">
+          <option value="">Alege...</option>
+          <option value="optiune1">Mediu</option>
+          <option value="optiune2">Important</option>
+        </select>
+      </div>
+
+      <input type="date">
+    </div>
+
+    <div class="images">
+      <img src="https://i.pinimg.com/736x/1e/c1/f5/1ec1f51c84173a68e0d0c716e8718fca.jpg" alt="Imagine 1">
+      <img src="https://wedme.ro/wp-content/uploads/2018/10/3.14-Adrian-Fluture.jpg" alt="Imagine 2">
+      <img src="https://i.simpalsmedia.com/point.md/news/809x456/10467780d258b417400283cd78f816d4.jpg" alt="Imagine 3">
+    </div>
+
+    <div style="display: flex; align-items: center; margin-bottom: 10px;">
+      <button class="round-button" onclick="this.style.backgroundColor='#4caf50'"></button>
+      <span>Varianta corectă</span>
+    </div>
+
+    <div class="checkbox-group">
+      <input type="checkbox" id="check"/>
+      <label for="check">Răspuns corect</label>
+    </div>
+  </div>
+  <footer>
+    <span class="footer-left">Cereteu Dumitru</span>
+    <span class="footer-right">Cereteu Dumitru</span>
+  </footer>
 </body>
 </html>
