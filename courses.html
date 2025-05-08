@@ -14,7 +14,7 @@
         <div class="logo">
           <i class="fas fa-book" style="color: #ff6600; margin-right: 8px;"></i> 
           eLearning CUTM
-        </div>
+        </div>          
           <nav>
               <ul class="nav-menu">
                   <li><a href="#">Home</a></li>
@@ -199,94 +199,128 @@
                         <a href="#">3</a>
                     </div>
                 </div>
-                <aside class="courses-sidebar">
-                    <div class="sidebar-block">
-                        <h3>Course Category</h3>
-                        <ul>
-                            
-                            <li>Commercial <span>15</span></li>
-                            <li>Office <span>15</span></li>
-                            <li>Shop <span>15</span></li>
-                            <li>Education <span>15</span></li>
-                            <li>Academy <span>15</span></li>
-                            <li>Cooking / living home <span>15</span></li>
-                            <li>Other <span>15</span></li>
-                        </ul>
-                    
-                    </div>
-                    <div class="sidebar-block">
-                        <h3>Instructors</h3>
-                        <ul>
-                            <li>Kevin White <span>15</span></li>
-                            <li>Olga Doe <span>15</span></li>
-                            <li>John Doe <span>15</span></li>
-                        </ul>
-                    </div>
-                    <div class="sidebar-block">
-                        <h3>Review</h3>
-                        <ul class="sidebar-review-list">
-                            <li>
-                                <span class="star-list">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                </span>
-                                <span>(0.058)</span>
-                            </li>
-                            <li>
-                                <span class="star-list">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <span>(0.025)</span>
-                            </li>
-                            <li>
-                                <span class="star-list">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <span>(0.012)</span>
-                            </li>
-                            <li>
-                                <span class="star-list">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <span>(0.008)</span>
-                            </li>
-                            <li>
-                                <span class="star-list">
-                                    <i class="fa-solid fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                    <i class="fa-regular fa-star"></i>
-                                </span>
-                                <span>(0.003)</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="sidebar-block">
-                        <h3>Level</h3>
-                        <ul>
-                            <li>All level <span>15</span></li>
-                            <li>Beginner <span>15</span></li>
-                            <li>Intermediate <span>15</span></li>
-                            <li>Expert <span>15</span></li>
-                        </ul>
-                    </div>
-                </aside>
+                <!-- Sidebar: Course Category -->
+<div class="sidebar-block">
+    <h3>Course Category</h3>
+    <ul class="filter-list">
+      <li>
+        <label>
+          <input type="checkbox" name="category" value="Commercial"> Commercial
+        </label>
+        <span>15</span>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="category" value="Office"> Office
+        </label>
+        <span>15</span>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="category" value="Shop"> Shop
+        </label>
+        <span>15</span>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="category" value="House"> House
+        </label>
+        <span>15</span>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Sidebar: Instructors -->
+  <div class="sidebar-block">
+    <h3>Instructors</h3>
+    <ul class="filter-list">
+      <li>
+        <label>
+          <input type="checkbox" name="instructor" value="Allan R. Jhonson"> Allan R. Jhonson
+        </label>
+        <span>15</span>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="instructor" value="Jemmy B. Vargo"> Jemmy B. Vargo
+        </label>
+        <span>15</span>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="instructor" value="Gregory E. Lewis"> Gregory E. Lewis
+        </label>
+        <span>15</span>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Sidebar: Review -->
+  <div class="sidebar-block">
+    <h3>Review</h3>
+    <ul class="filter-list">
+      <li>
+        <label>
+          <input type="checkbox" name="review" value="5">
+          ★★★★★
+        </label>
+        <span>15</span>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="review" value="4">
+          ★★★★☆
+        </label>
+        <span>15</span>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="review" value="3">
+          ★★★☆☆
+        </label>
+        <span>15</span>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="review" value="2">
+          ★★☆☆☆
+        </label>
+        <span>15</span>
+      </li>
+    </ul>
+  </div>
+  
+  <!-- Sidebar: Level -->
+  <div class="sidebar-block">
+    <h3>Level</h3>
+    <ul class="filter-list">
+      <li>
+        <label>
+          <input type="checkbox" name="level" value="All Levels"> All Levels
+        </label>
+        <span>15</span>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="level" value="Beginner"> Beginner
+        </label>
+        <span>15</span>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="level" value="Intermediate"> Intermediate
+        </label>
+        <span>15</span>
+      </li>
+      <li>
+        <label>
+          <input type="checkbox" name="level" value="Expert"> Expert
+        </label>
+        <span>15</span>
+      </li>
+    </ul>
+  </div>
+  
             </div>
         </section>
     </main>
