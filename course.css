@@ -133,7 +133,6 @@ color: #ff6600;
       font-weight: bold;
   }
 
-/* === BREADCRUMB === */
 .courses-breadcrumb {
     max-width: 1200px;
     margin: 0 auto 16px auto;
@@ -149,7 +148,7 @@ color: #ff6600;
     font-size: 0.9em;
 }
 
-/* === ALL COURSES HEADER === */
+
 .all-courses-header {
     position: relative;
     min-height: 52px;
@@ -194,7 +193,6 @@ color: #ff6600;
     border: 1px solid #e0e0e0;
 }
 
-/* === COURSES PAGE LAYOUT === */
 .courses-main {
     padding-top: 0;
     background: #fff;
@@ -341,7 +339,6 @@ color: #ff6600;
     border-color: #fd7902;
 }
 
-/* === SIDEBAR === */
 .courses-sidebar {
     width: 260px;
     min-width: 220px;
