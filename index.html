@@ -1,149 +1,230 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Practica de inițiere RC-241</title>
-  <style>
-    * {
-      box-sizing: border-box;
-    }
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-    }
-    nav {
-      background-color: #007acc;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px;
-      position: relative;
-    }
-    .title {
-      font-size: 20px;
-      text-align: center;
-      flex: 1;
-    }
-    .corner {
-      position: absolute;
-      font-size: 12px;
-    }
-    .top-left {
-      left: 10px;
-    }
-    .top-right {
-      right: 10px;
-    }
-    .container {
-      padding: 20px;
-    }
-    .inputs {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 30px;
-    }
-    input, select {
-      padding: 8px;
-      font-size: 16px;
-      width: 100%;
-    }
-    .select-group {
-      text-align: center;
-      width: 100%;
-    }
-    .images {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      margin-bottom: 20px;
-    }
-    .images img {
-      width: 32%;
-      height: auto;
-    }
-    .round-button {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-      border: 1px solid #333;
-      margin-right: 10px;
-      cursor: pointer;
-    }
-    .checkbox-group {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 10px;
-        margin-top: 10px;
-        margin-right: 1420px;
-    }
-    footer {
-      background-color: #007acc;
-      color: white;
-      position: relative;
-      padding: 30px;
-      margin-top: 75px;
-    }
-    .footer-left {
-      position: absolute;
-      left: 10px;
-      bottom: 10px;
-      font-size: 17;
-    }  
-    .footer-right {
-      position: absolute;
-      right: 10px;
-      bottom: 10px;
-      font-size: 17px;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eLearning CUTM</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+        }
+        body {
+            background: #fff;
+            color: #333;
+        }
+        header {
+            background: #f8f8f8;
+            padding: 20px 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff6600;
+            flex: 1;
+        }
+        .nav-menu {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            flex: 2;
+        }
+        .nav-menu li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            padding: 8px 12px;
+            border: 1px solid transparent;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .nav-menu li a:hover {
+            background-color: #ff6600;
+            color: white;
+            border-color: #ff6600;
+        }
+        .auth-links {
+            flex: 1;
+            text-align: right;
+        }
+        .auth-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .hero {
+            background: linear-gradient(to right, #fff0b3, #ccffcc);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 40px;
+        }
+        .hero-text {
+            max-width: 50%;
+        }
+        .hero-text h2 {
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        .hero-text p {
+            margin-bottom: 20px;
+        }
+        .hero-text button {
+            background: #ff6633;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .hero-img img {
+            width: 300px;
+            border-radius: 10px;
+        }
+        .categories {
+            padding: 40px;
+        }
+        .categories-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .categories h3 {
+            font-size: 28px;
+        }
+        .categories p {
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .all-categories-button {
+            padding: 8px 16px;
+            border: 1px solid #000;
+            border-radius: 20px;
+            background-color: transparent;
+            cursor: pointer;
+            font-weight: bold;
+            transition: background 0.3s, color 0.3s;
+        }
+        .all-categories-button:hover {
+            background-color: #000;
+            color: white;
+        }
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .category-box {
+            background: #fafafa;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            height: 150px;
+            border: 1px solid #000;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .category-box:hover {
+            background: #ff6600;
+            color: white;
+            transform: translateY(-5px);
+            cursor: pointer;
+        }
+        .category-icon {
+            width: 40px;
+            height: 40px;
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
-  <nav>
-    <span class="corner top-left">Cereteu Dumitru</span>
-    <div class="title">Practica de inițiere RC-241</div>
-    <span class="corner top-right">Cereteu Dumitru</span>
-  </nav>
+    <header>
+        <div class="logo">eLearning CUTM</div>
+        <nav>
+            <ul class="nav-menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Courses</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">LearnPress</a></li>
+                <li><a href="#">Premium</a></li>
+            </ul>
+        </nav>
+        <div class="auth-links">
+            <a href="#">Login / Register</a>
+        </div>
+    </header>
 
-  <div class="container">
-    <div class="inputs">
-      <input type="password" placeholder="password" onclick="this.placeholder=''">
+    <section class="hero">
+        <div class="hero-text">
+            <h2>Build Skills With Online Course</h2>
+            <p>We denounce with righteous indignation and dislike men who are so beguiled and demoralized that cannot trouble.</p>
+            <button>Posts Comment</button>
+        </div>
+        <div class="hero-img">
+            <img src="https://via.placeholder.com/300x400" alt="Online School Girl">
+        </div>
+    </section>
 
-      <div class="select-group">
-        <label for="mediu">Mediu/importanță</label>
-        <select id="mediu">
-          <option value="">Alege...</option>
-          <option value="optiune1">Mediu</option>
-          <option value="optiune2">Important</option>
-        </select>
-      </div>
-
-      <input type="date">
-    </div>
-
-    <div class="images">
-      <img src="https://i.pinimg.com/736x/1e/c1/f5/1ec1f51c84173a68e0d0c716e8718fca.jpg" alt="Imagine 1">
-      <img src="https://wedme.ro/wp-content/uploads/2018/10/3.14-Adrian-Fluture.jpg" alt="Imagine 2">
-      <img src="https://i.simpalsmedia.com/point.md/news/809x456/10467780d258b417400283cd78f816d4.jpg" alt="Imagine 3">
-    </div>
-
-    <div style="display: flex; align-items: center; margin-bottom: 10px;">
-      <button class="round-button" onclick="this.style.backgroundColor='#4caf50'"></button>
-      <span>Varianta corectă</span>
-    </div>
-
-    <div class="checkbox-group">
-      <input type="checkbox" id="check"/>
-      <label for="check">Răspuns corect</label>
-    </div>
-  </div>
-  <footer>
-    <span class="footer-left">Cereteu Dumitru</span>
-    <span class="footer-right">Cereteu Dumitru</span>
-  </footer>
+    <section class="categories">
+        <div class="categories-header">
+            <h3>Top Categories</h3>
+            <button class="all-categories-button">All Categories</button>
+        </div>
+        <p>Explore our popular categories</p>
+        <div class="category-grid">
+            <div class="category-box">
+                <img src="https://cdn-icons-png.flaticon.com/128/1828/1828884.png" class="category-icon" alt="Art">
+                Art & Design<br>38 Courses
+            </div>
+            <div class="category-box">
+                <img src="https://cdn-icons-png.flaticon.com/128/2721/2721297.png" class="category-icon" alt="Development">
+                Development<br>38 Courses
+            </div>
+            <div class="category-box">
+                <img src="https://cdn-icons-png.flaticon.com/128/561/561127.png" class="category-icon" alt="Communication">
+                Communication<br>38 Courses
+            </div>
+            <div class="category-box">
+                <img src="https://cdn-icons-png.flaticon.com/128/2521/2521601.png" class="category-icon" alt="Videography">
+                Videography<br>38 Courses
+            </div>
+            <div class="category-box">
+                <img src="https://cdn-icons-png.flaticon.com/128/2922/2922688.png" class="category-icon" alt="Photography">
+                Photography<br>38 Courses
+            </div>
+            <div class="category-box">
+                <img src="https://cdn-icons-png.flaticon.com/128/2165/2165004.png" class="category-icon" alt="Marketing">
+                Marketing<br>38 Courses
+            </div>
+            <div class="category-box">
+                <img src="https://cdn-icons-png.flaticon.com/128/2620/2620373.png" class="category-icon" alt="Content Writing">
+                Content Writing<br>38 Courses
+            </div>
+            <div class="category-box">
+                <img src="https://cdn-icons-png.flaticon.com/128/2583/2583345.png" class="category-icon" alt="Finance">
+                Finance<br>38 Courses
+            </div>
+            <div class="category-box">
+                <img src="https://cdn-icons-png.flaticon.com/128/1998/1998592.png" class="category-icon" alt="Science">
+                Science<br>38 Courses
+            </div>
+            <div class="category-box">
+                <img src="https://cdn-icons-png.flaticon.com/128/1253/1253790.png" class="category-icon" alt="Network">
+                Network<br>38 Courses
+            </div>
+        </div>
+    </section>
 </body>
 </html>
+
+
