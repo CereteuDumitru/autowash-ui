@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register - Auto Wash</title>
+    <link rel="stylesheet" href="register.css">
+</head>
+<body>
+    <div class="background">
+      
+        <div id="register-container" class="register-container">
+            <h1>Auto Wash - Register</h1>
+            <form id="registerForm">
+           
+                <div class="form-group">
+                    <label for="firstName">Prenume</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Introdu prenumele tău" required>
+                </div>
+          
+                <div class="form-group">
+                    <label for="lastName">Nume</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Introdu numele tău" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="role">Selectează rolul</label>
+                    <select id="role" name="role" required>
+                        <option value="worker">Muncitor la Spălătorie</option>
+                        <option value="client">Client</option>
+                    </select>
+                </div>
+          
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="example@gmail.com" required>
+                    <small class="error-message" id="emailError"></small>
+                </div>
+            
+                <div class="form-group">
+                    <label for="phone">Număr de telefon</label>
+                    <div class="phone-input">
+                        <select id="phoneCode" name="phoneCode">
+                            <option value="+373">Moldova (+373)</option>
+                            <option value="+40">România (+40)</option>
+                            <option value="+49">Germania (+49)</option>
+                        </select>
+                        <input type="tel" id="phone" name="phone" placeholder="123456789" required>
+                    </div>
+                </div>
+   
+                <div class="form-group">
+                    <label for="password">Parolă</label>
+                    <input type="password" id="password" name="password" placeholder="Introdu parola ta" required>
+                    <small class="error-message" id="passwordError"></small>
+                </div>
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn">Creează Contul</button>
+                </div>
+            </form>
+        </div>
+
+        <div id="confirmation-container" class="confirmation-container hidden">
+            <div class="confirmation-content">
+                <div class="checkmark">&#10004;</div>
+                <h2>Contul a fost creat cu succes!</h2>
+                <p>Te rugăm să te conectezi pentru a continua.</p>
+                <button class="btn-secondary" onclick="redirectToLogin()">Mergi la Log In</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>

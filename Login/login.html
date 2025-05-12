@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ro">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,25 +7,36 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
-    <div class="login-container">
-        <h1>Auto Wash - Login</h1>
-        <form id="loginForm">
-            <div class="form-group">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" placeholder="Enter your first name" required>
-            </div>
-            <div class="form-group">
-                <label for="lastName">Last Name</label>
-                <input type="text" id="lastName" name="lastName" placeholder="Enter your last name" required>
-            </div>
-            <div class="form-group">
-    <label for="password">Password</label>
-    <input type="password" id="password" name="password" placeholder="Enter your password" required>
-    <small class="error-message" id="passwordError"></small> <!-- Aici se afișează eroarea -->
-</div>
-            <button type="submit" class="btn">Login</button>
-            <button type="button" class="btn register-btn" onclick="redirectToRegister()">Register</button>
-        </form>
+    <div class="background">
+        <div class="login-container">
+            <h1>Auto Wash - Login</h1>
+            <form id="loginForm">
+           
+                <div class="form-group">
+                    <label for="firstName">Prenume</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Introdu prenumele tău" required>
+                </div>
+           
+                <div class="form-group">
+                    <label for="lastName">Nume de familie</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Introdu numele tău de familie" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="password">Parolă</label>
+                    <input type="password" id="password" name="password" placeholder="Introdu parola ta" required>
+                    <small class="error-message" id="passwordError"></small>
+                </div>
+              
+                <div class="form-buttons">
+                    <button type="submit" class="btn">Autentificare</button>
+                </div>
+            </form>
+
+            <p class="register-text">
+                Nu ai cont? <a href="../register/register.html" class="register-link">Înregistrează-te acum.</a>
+            </p>
+        </div>
     </div>
     <script src="login.js"></script>
 </body>
