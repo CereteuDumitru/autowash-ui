@@ -110,3 +110,21 @@ button.btn-secondary:hover {
     font-size: 14px;
     margin-bottom: 20px;
 }
+
+.login-text {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.login-text .login-link {
+    color: #007bff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-text .login-link:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
