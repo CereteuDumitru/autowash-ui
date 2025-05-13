@@ -21,7 +21,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     alert(`Welcome, ${firstName} ${lastName}! You are successfully logged in.`);
 
     // Redirecționăm utilizatorul către pagina "homepage"
-    window.location.href = "../homepage/homepage.html"; 
+    window.location.href = "../navbar/navbar.html"; 
 });
 
 function redirectToRegister() {
