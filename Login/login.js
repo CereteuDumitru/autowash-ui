@@ -6,10 +6,9 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     const password = document.getElementById('password').value;
     const passwordError = document.getElementById('passwordError');
 
-    // Ascundem mesajele de eroare
     passwordError.style.display = 'none';
 
-    // Validăm parola
+  
     const passwordRegex = /^[A-Z].{7,}$/; 
     if (!passwordRegex.test(password)) {
         passwordError.textContent = 'Password must start with an uppercase letter and be at least 8 characters long.';
@@ -17,10 +16,9 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
         return;
     }
 
-    // Afișăm un mesaj de bun venit (opțional)
     alert(`Welcome, ${firstName} ${lastName}! You are successfully logged in.`);
 
-    // Redirecționăm utilizatorul către pagina "homepage"
+
     window.location.href = "../navbar/navbar.html"; 
 });
 

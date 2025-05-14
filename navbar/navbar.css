@@ -32,6 +32,13 @@ a {
     display: flex;
     align-items: center;
 }
+.navbarfull{
+     position: fixed;
+      top: 0; /* Lipit de partea de sus a paginii */
+    left: 0; /* Asigură că începe de la marginea din stânga */
+    width: 100%;
+    z-index: 1000;
+}
 
 .cart-info {
     margin-right: 15px;
@@ -186,4 +193,40 @@ a {
 .modal-buttons .btn-cancel {
     background: #aaa;
     color: white;
+}
+/* Stilizare pentru dropdown-urile din navbar */
+.language-selector,
+.currency-selector {
+    background-color: #222; /* Fundal pentru dropdown */
+    color: white; /* Text alb */
+    border: 1px solid white; /* Bordură albă */
+    border-radius: 5px; /* Colțuri rotunjite */
+    padding: 5px; /* Spațiere internă */
+    font-size: 0.9rem; /* Dimensiune potrivită */
+    outline: none; /* Elimină conturul la focus */
+    appearance: none; /* Elimină stilul implicit al browserului */
+    cursor: pointer; /* Cursor pointer */
+}
+
+/* Săgețile dropdown să arate uniform pe toate browserele */
+.language-selector::-ms-expand,
+.currency-selector::-ms-expand {
+    display: none; /* Ascunde săgeata implicită */
+}
+
+/* Containerul dropdown să nu depășească spațiul */
+.language-selector:focus,
+.currency-selector:focus {
+    border-color: #ff0000; /* Schimbăm culoarea la focus */
+}
+
+/* Adăugăm un pseudo-element pentru săgeata custom */
+.language-selector::after,
+.currency-selector::after {
+    content: '▼'; /* Indicator săgeată */
+    font-size: 0.7rem;
+    color: white;
+    position: absolute;
+    right: 10px;
+    pointer-events: none;
 }
