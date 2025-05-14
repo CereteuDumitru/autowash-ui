@@ -38,6 +38,7 @@ a {
     left: 0; /* Asigură că începe de la marginea din stânga */
     width: 100%;
     z-index: 1000;
+    
 }
 
 .cart-info {

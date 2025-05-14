@@ -1,0 +1,186 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Secțiunea principală cu imagine de fundal */
+.hero-section {
+    position: relative;
+    height: 100vh; /* Înălțimea secțiunii */
+    background-image: url('../imagini/homepage.jpg'); /* Imaginea de fundal */
+    background-size: cover; /* Asigură acoperirea completă */
+    height: 500px;
+    background-position: center; /* Poziționează imaginea */
+    color: white; /* Text alb */
+    
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.hero-buttons .button-primary,
+.hero-buttons .button-secondary {
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.hero-buttons .button-primary {
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+}
+
+.hero-buttons .button-primary:hover {
+    background-color: white;
+    color: #333;
+}
+
+.hero-buttons .button-secondary {
+    background-color: #ff0000;
+    color: white;
+    border: 2px solid #ff0000;
+}
+
+.hero-buttons .button-secondary:hover {
+    background-color: white;
+    color: #ff0000;
+}
+
+/* Conținutul principal */
+.main-content {
+    padding: 20px;
+    text-align: center;
+}
+/* Ascunde inițial elementele */
+.hidden {
+    opacity: 0; /* Elementul este complet invizibil */
+    transform: translateX(-100px); /* Elementul este deplasat spre stânga */
+    transition: all 0.8s ease-in-out; /* Durata animației */
+}
+
+/* Elementele devin vizibile */
+.visible {
+    opacity: 1; /* Elementul devine vizibil */
+    transform: translateX(0); /* Revine la poziția inițială */
+}
+
+
+.about-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    color: white;
+    padding: 40px 80px;
+    overflow: hidden;
+}
+
+.about-content {
+    max-width: 50%;
+}
+
+.about-content h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+.underline {
+    width: 50px;
+    height: 4px;
+    background-color: #ff0000;
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.about-content a {
+    color: #ff0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.about-content a:hover {
+    text-decoration: underline;
+}
+
+.about-image img {
+    width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.features-section {
+    background-color: #fff;
+    padding: 50px 20px;
+}
+
+.features-section .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grilă flexibilă */
+    gap: 20px; /* Spațiu între elemente */
+    text-align: center; /* Centrare text */
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item img {
+    width: 60px; /* Dimensiunea pictogramelor */
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.feature-item p {
+    font-size: 1rem;
+    color: #333;
+    font-weight: 500;
+}

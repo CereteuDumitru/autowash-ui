@@ -19,7 +19,7 @@ document.getElementById('loginForm').addEventListener('submit', function(e) {
     alert(`Welcome, ${firstName} ${lastName}! You are successfully logged in.`);
 
 
-    window.location.href = "../navbar/navbar.html"; 
+    window.location.href = "../homepage/homepage.html"; 
 });
 
 function redirectToRegister() {
