@@ -30,4 +30,4 @@ document.addEventListener('DOMContentLoaded', () => {
     };
 
     window.addEventListener('scroll', handleScrollAnimation);
-});
+}); 

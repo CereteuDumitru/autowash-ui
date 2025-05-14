@@ -7,6 +7,7 @@ const cancelLogout = document.getElementById('cancelLogout');
 
 userIcon.addEventListener('click', () => {
     dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
+    console.log("Asmkdsjab");
 });
 
 logoutOption.addEventListener('click', () => {
