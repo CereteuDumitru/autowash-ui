@@ -1,0 +1,109 @@
+/* Stiluri generale pentru footer */
+.footer {
+   background-color: black;
+    color: white;
+    padding: 40px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Secțiunea de contact */
+.footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-form {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-input {
+    padding: 10px;
+    border: none;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.footer-button {
+    padding: 10px 20px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
+    background-color: darkred;
+}
+
+/* Secțiunea de link-uri */
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: red;
+}
+
+/* Secțiunea de informații */
+.footer-info h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-info a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+}
+
+.footer-info a:hover {
+    color: red;
+}
+
+.footer-info p {
+    margin: 5px 0;
+}
+
+.footer-social a {
+    margin-right: 10px;
+    font-size: 18px;
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: red;
+}
+
+/* Copyright */
+.footer-copyright {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #ccc;
+}

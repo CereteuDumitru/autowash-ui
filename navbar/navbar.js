@@ -24,3 +24,22 @@ cancelLogout.addEventListener('click', () => {
 confirmLogout.addEventListener('click', () => {
     window.location.href = "../Login/login.html"; 
 });
+document.getElementById("navDespreNoi").addEventListener("click", () => {
+    window.location.href = "../desprenoi/desprenoi.html"; 
+});
+
+document.getElementById("navPreturi").addEventListener("click", () => {
+    window.location.href = "../preturi/preturi.html"; 
+});
+
+document.getElementById("navHome").addEventListener("click", () => {
+    window.location.href = "../homepage/homepage.html"; 
+});
+
+document.getElementById("navDetergentiEco").addEventListener("click", () => {
+    window.location.href = "detergenti-eco.html"; 
+});
+
+document.getElementById("navDetalii").addEventListener("click", () => {
+    window.location.href = "detalii.html"; 
+});

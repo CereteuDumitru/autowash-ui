@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Wash Preturi</title>
+     <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
+    <link rel="stylesheet" href="preturi.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script>$(document).ready(function(){
+            $('#navbar').load("../navbar/navbar.html");
+            $('#footer').load("../footer/footer.html");
+           });
+         </script> 
+</head>
+<body>
+    <div id="navbar"></div>
+
+    <section class="pricing">
+        <h1 class="pricing-title">Prețuri spălătorie manuală</h1>
+        <p class="pricing-description">
+            Spălătoria automată este <strong>deschisă zilnic</strong> între orele <strong>8:00</strong> și <strong>20:00</strong>, iar prețurile variază în funcție de pachetul ales și tipul automobilului.
+        </p>
+
+        <!-- Selector tipuri de vehicule -->
+          <div class="vehicle-selector">
+        <button class="vehicle-button active" onclick="updatePrices('berlina')">BERLINĂ</button>
+        <button class="vehicle-button" onclick="updatePrices('suv')">SUV</button>
+        <button class="vehicle-button" onclick="updatePrices('microbuz')">MICROBUZ</button>
+    </div>
+
+        <!-- Carduri de prețuri -->
+        <div class="pricing-cards">
+            <div class="pricing-card">
+                <h2>Confort</h2>
+                <p class="price"><span>150</span> lei exterior</p>
+                <p class="interior-price">+110 lei spălare interior</p>
+                <ul class="features">
+                    <li><img src="../imagini/logo-1-price-part.png" alt="Spumă activă"> Spumă activă</li>
+                    <li><img src="../imagini/logo-2-price-part.png" alt="JetTurbo"> JetTurbo</li>
+                    <li><img src="../imagini/logo-3-price-part.png" alt="Ceară"> Ceară</li>
+                </ul>
+                <p class="duration">25-40min</p>
+            </div>
+
+            <div class="pricing-card">
+                <h2>Combo</h2>
+                <p class="price"><span>230</span> lei exterior</p>
+                <p class="interior-price">+0 lei spălare interior</p>
+                <ul class="features">
+                    <li><img src="../imagini/logo-1-price-part.png" alt="Spumă activă"> Spumă activă</li>
+                    <li><img src="../imagini/logo-2-price-part.png" alt="JetTurbo"> JetTurbo</li>
+                    <li><img src="../imagini/logo-3-price-part.png" alt="Ceară"> Ceară</li>
+                </ul>
+                <p class="duration">25-40min</p>
+            </div>
+
+            <div class="pricing-card">
+                <h2>Premium</h2>
+                <p class="price"><span>300</span> lei exterior</p>
+                <p class="interior-price">+0 lei spălare interior</p>
+                <ul class="features">
+                    <li><img src="../imagini/logo-1-price-part.png" alt="Spumă activă"> Spumă activă</li>
+                    <li><img src="../imagini/logo-2-price-part.png" alt="JetTurbo"> JetTurbo</li>
+                    <li><img src="../imagini/logo-3-price-part.png" alt="Ceară"> Ceară</li>
+                </ul>
+                <p class="duration">25-40min</p>
+            </div>
+        </div>
+    </section>
+   <script src="./preturi.js"></script>
+</body>
+</html>

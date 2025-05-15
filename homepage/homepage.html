@@ -5,34 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Homepage</title>
     <link rel="stylesheet" href="../navbar/navbar.css">
+    <link rel="stylesheet" href="../footer/footer.css">
     <link rel="stylesheet" href="homepage.css">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
    <script>$(document).ready(function(){
             $('#navbar').load("../navbar/navbar.html");
+            $('#footer').load("../footer/footer.html");
            });
-         </script>      
+         </script>     
 </head>
 <body>
- <div id="navbar">
- </div>
+ <div id="navbar"></div>
+ 
     <div class="hero-section">
         <div class="hero-overlay">
-            <h1>Spălătoriile auto Self Service<br>la cheie!</h1>
+            <h1>Spalatoria AutoWash Moldova<br>la cheie!</h1>
             <p>Începeți afacerea cu noi!<br><strong>+37 368 460 296</strong></p>
             <div class="hero-buttons">
                 <a href="#" class="button-primary">Asamblați singur chiuveta</a>
-                <a href="#" class="button-secondary">Aflați mai multe</a>
+                <a href="../programari/programari.html" class="button-secondary">Programeaza-te</a>
             </div>
         </div>
     </div>
 
- <div class="about-section">
+  <div class="theme-toggle" id="themeToggle">
+        <span class="icon">🌙</span> <!-- Icon pentru lună -->
+        <div class="slider"></div> <!-- Slider -->
+        <span class="icon">☀️</span> <!-- Icon pentru soare -->
+    </div>
+
+ <div class="about-section" id="despre-noi">
     <div class="about-content scroll-animation hidden">
         <h2>Despre noi</h2>
         <div class="underline"></div>
-        <p>LuxWash este o companie europeană progresivă care oferă echipamente de înaltă calitate pentru chiuvete, precum și furnizarea de servicii pentru instalarea și lansarea propriilor complexe.</p>
+        <p>AutoWash este o companie europeană progresivă care oferă spalarea de înaltă calitate pentru masini, precum și furnizarea de servicii pentru instalarea și lansarea propriilor complexe.</p>
         <p><strong>Echipamente de service auto</strong></p>
-        <a href="https://luxsto.com.ua" target="_blank">luxsto.com.ua</a>
+        <a href="https://luxsto.com.ua" target="_blank">auto.wash.md</a>
     </div>
     <div class="about-image scroll-animation hidden">
         <img src="../imagini/desprenoi-part.webp" alt="Echipamente LuxWash">
@@ -67,6 +75,8 @@
         </div>
     </div>
 </section>
+<div id="footer"></div>
+
 
 <script src="./homepage.js"></script>
 

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programari - Auto Wash</title>
+    <link rel="stylesheet" href="programari.css">
+</head>
+<body>
+    <div class="background">
+      
+        <div id="register-container" class="register-container">
+            <h1>Auto Wash - Programari</h1>
+            <form id="registerForm">
+           
+                <div class="form-group">
+                    <label for="firstName">Prenume</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Introdu prenumele tău" required>
+                </div>
+          
+                <div class="form-group">
+                    <label for="lastName">Nume</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Introdu numele tău" required>
+                </div>
+            
+                <div class="form-group">
+                    <label for="role">Selectează serviciul</label>
+                    <select id="role" name="role" required>
+                        <option value="confort">Confort</option>
+                        <option value="combo">Combo</option>
+                        <option value="premium">Premium</option>
+                    </select>
+                </div>
+          
+                <div class="form-group">
+                    <label for="appointment">Selectează data și ora</label>
+                    <input type="datetime-local" id="appointment" name="appointment" required>
+                </div>
+            
+                <div class="form-group">
+              <label for="phone">Număr de telefon</label>
+    <div class="phone-input">
+        <select id="phoneCode" name="phoneCode">
+            <option value="+373">Moldova (+373)</option>
+            <option value="+40">România (+40)</option>
+            <option value="+49">Germania (+49)</option>
+        </select>
+          <input type="tel" id="phone" name="phone" placeholder="123456789" required>
+    </div>
+         <small id="phoneError" class="error-message"></small> <!-- Mesajul de eroare sub input -->
+</div>
+   
+            
+
+                <div class="form-buttons">
+                    <button type="submit" class="btn">Programeaza-te</button>
+                    
+                </div>
+            </form>
+        </div>
+
+     
+    </div>
+      <div id="success-container" class="success-container hidden">
+        <h2>Te-ai programat cu succes!</h2>
+        <p>Te așteptăm la noi la Auto Wash pentru serviciul selectat.</p>
+    </div>
+
+    <script src="programari.js"></script>
+    
+</body>
+</html>

@@ -3,6 +3,7 @@ body, html {
     padding: 0;
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    color: white;
 }
 
 /* Secțiunea principală cu imagine de fundal */
@@ -169,4 +170,57 @@ body, html {
     font-size: 1rem;
     color: #333;
     font-weight: 500;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: white; /* Fundal alb implicit */
+    color: black; /* Text negru implicit */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Tranziție lină */
+}
+
+/* Container pentru butonul de switch */
+.theme-toggle {
+    position: fixed;
+    top: 50%; /* Centrat pe verticală */
+    left: 5px; /* În partea stângă */
+    transform: translateY(-50%); /* Ajustare pentru centrarea completă pe verticală */
+    width: 40px; /* Lățime redusă */
+    height: 80px; /* Înălțime redusă */
+    background-color: #333;
+    border-radius: 20px; /* Ajustare pentru forma rotunjită */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px 0; /* Spațiu interior ajustat */
+}
+
+/* Stil pentru simbolurile (soare și lună) */
+.theme-toggle .icon {
+    font-size: 16px; /* Dimensiune redusă pentru icon */
+    color: white;
+}
+
+.theme-toggle .slider {
+    width: 20px; /* Dimensiune redusă a slider-ului */
+    height: 20px; /* Dimensiune redusă a slider-ului */
+    background-color: #555;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+/* Fundal negru */
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+/* Poziție slider pentru mod dark */
+body.dark-mode .theme-toggle .slider {
+    transform: translateY(30px); /* Ajustare pentru noua înălțime */
+    background-color: red;
 }

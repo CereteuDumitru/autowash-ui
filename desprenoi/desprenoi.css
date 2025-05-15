@@ -1,0 +1,81 @@
+.luxwash-about {
+    position: relative;
+    background-image: url('../imagini/desprenoi123.jpg'); /* Imaginea de fundal */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+    height: auto; /* Înălțime automată în funcție de conținut */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Lățimea completă a paginii */
+}
+
+.luxwash-overlay {
+    background-color: rgba(0, 0, 0, 0.7); /* Suprapunere transparentă */
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 800px; /* Opțional: limitează lățimea textului */
+    width: calc(100% - 40px); /* Se adaptează la ecran, dar păstrează o margine */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adaugă o umbră */
+}
+
+.luxwash-overlay h1 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid red;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.luxwash-info p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.luxwash-info strong {
+    font-weight: bold;
+    color: #ff0000; /* Evidențiere cu roșu */
+}
+.luxwash-details {
+    background-color: #ffffff; /* Fundal alb */
+    color: #000000; /* Text negru */
+    padding: 50px 20px;
+}
+
+.luxwash-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px; /* Spațiu între rânduri */
+    flex-wrap: wrap; /* Pentru adaptabilitate pe ecrane mici */
+}
+
+.luxwash-image {
+    flex: 1;
+    max-width: 45%; /* Lățime maximă pentru imagini */
+    margin: 0 auto;
+}
+
+.luxwash-image img {
+    width: 100%; /* Imaginea ocupă toată lățimea containerului */
+    border-radius: 10px; /* Colțuri rotunjite pentru imagini */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Umbră pentru imagini */
+}
+
+.luxwash-text {
+    flex: 1;
+    max-width: 45%; /* Lățime maximă pentru text */
+    margin: 0 auto;
+    text-align: left; /* Text aliniat la stânga */
+}
+
+.luxwash-text p {
+    font-size: 1rem; /* Dimensiunea textului */
+    line-height: 1.8; /* Înălțime între linii pentru lizibilitate */
+    margin: 0;
+}
