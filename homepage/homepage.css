@@ -78,23 +78,6 @@ body, html {
     color: #ff0000;
 }
 
-/* Conținutul principal */
-.main-content {
-    padding: 20px;
-    text-align: center;
-}
-/* Ascunde inițial elementele */
-.hidden {
-    opacity: 0; /* Elementul este complet invizibil */
-    transform: translateX(-100px); /* Elementul este deplasat spre stânga */
-    transition: all 0.8s ease-in-out; /* Durata animației */
-}
-
-/* Elementele devin vizibile */
-.visible {
-    opacity: 1; /* Elementul devine vizibil */
-    transform: translateX(0); /* Revine la poziția inițială */
-}
 
 
 .about-section {
@@ -153,9 +136,12 @@ body, html {
 
 .features-section .container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Grilă flexibilă */
-    gap: 20px; /* Spațiu între elemente */
+    grid-template-columns: repeat(3, 1fr);  /* Grilă flexibilă */
+     gap: 30px 50px; /* Spațiu între elemente */
+    justify-items: center;
     text-align: center; /* Centrare text */
+     max-width: 1200px;
+    margin: 0 auto; 
 }
 
 .feature-item {
