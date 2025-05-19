@@ -7,7 +7,7 @@ const cancelLogout = document.getElementById('cancelLogout');
 
 userIcon.addEventListener('click', () => {
     dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-    console.log("Asmkdsjab");
+  
 });
 
 logoutOption.addEventListener('click', () => {
@@ -36,10 +36,30 @@ document.getElementById("navHome").addEventListener("click", () => {
     window.location.href = "../homepage/homepage.html"; 
 });
 
-document.getElementById("navDetergentiEco").addEventListener("click", () => {
-    window.location.href = "detergenti-eco.html"; 
+
+const reportOption = document.getElementById('reportOption');
+const reportModal = document.getElementById('reportModal');
+const closeReport = document.getElementById('closeReport');
+const sendReport = document.getElementById('sendReport');
+const reportText = document.getElementById('reportText');
+
+reportOption.addEventListener('click', () => {
+    reportModal.style.display = 'flex';
 });
 
-document.getElementById("navDetalii").addEventListener("click", () => {
-    window.location.href = "detalii.html"; 
+
+closeReport.addEventListener('click', () => {
+    reportModal.style.display = 'none';
+    reportText.value = ''; 
+});
+
+sendReport.addEventListener('click', () => {
+    const message = reportText.value.trim();
+    if (message) {
+        alert('Raportul a fost trimis cu succes: ' + message);
+        reportModal.style.display = 'none';
+        reportText.value = ''; 
+    } else {
+        alert('Te rugăm să completezi câmpul cu detalii despre problemă.');
+    }
 });

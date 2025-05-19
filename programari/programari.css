@@ -85,7 +85,7 @@ button.btn-secondary:hover {
 
 
 .success-container {
-    display: none; /* Inițial ascuns */
+    display: none; 
     background: #fff;
     padding: 30px 40px;
     border-radius: 10px;
@@ -109,7 +109,6 @@ button.btn-secondary:hover {
     font-size: 16px;
 }
 
-/* Ascunde elementele cu clasa hidden */
 .hidden {
     display: none;
 }

@@ -1,4 +1,4 @@
-/* Stiluri generale pentru footer */
+
 .footer {
    background-color: black;
     color: white;
@@ -13,7 +13,6 @@
     gap: 20px;
 }
 
-/* Secțiunea de contact */
 .footer-contact h3 {
     font-size: 18px;
     margin-bottom: 10px;
@@ -46,7 +45,7 @@
     background-color: darkred;
 }
 
-/* Secțiunea de link-uri */
+
 .footer-links ul {
     list-style: none;
     padding: 0;
@@ -67,7 +66,6 @@
     color: red;
 }
 
-/* Secțiunea de informații */
 .footer-info h4 {
     font-size: 18px;
     margin-bottom: 10px;
@@ -100,7 +98,6 @@
     color: red;
 }
 
-/* Copyright */
 .footer-copyright {
     text-align: center;
     margin-top: 20px;

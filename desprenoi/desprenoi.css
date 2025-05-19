@@ -1,26 +1,26 @@
 .luxwash-about {
     position: relative;
-    background-image: url('../imagini/desprenoi123.jpg'); /* Imaginea de fundal */
+    background-image: url('../imagini/desprenoi123.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white;
     padding: 50px 20px;
     text-align: center;
-    height: auto; /* Înălțime automată în funcție de conținut */
+    height: auto; 
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%; /* Lățimea completă a paginii */
+    width: 100%; 
 }
 
 .luxwash-overlay {
-    background-color: rgba(0, 0, 0, 0.7); /* Suprapunere transparentă */
+    background-color: rgba(0, 0, 0, 0.7); 
     padding: 40px;
     border-radius: 10px;
-    max-width: 800px; /* Opțional: limitează lățimea textului */
-    width: calc(100% - 40px); /* Se adaptează la ecran, dar păstrează o margine */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Adaugă o umbră */
+    max-width: 800px; 
+    width: calc(100% - 40px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
 }
 
 .luxwash-overlay h1 {

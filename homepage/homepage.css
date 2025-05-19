@@ -6,15 +6,14 @@ body, html {
     color: white;
 }
 
-/* Secțiunea principală cu imagine de fundal */
 .hero-section {
     position: relative;
-    height: 100vh; /* Înălțimea secțiunii */
-    background-image: url('../imagini/homepage.jpg'); /* Imaginea de fundal */
-    background-size: cover; /* Asigură acoperirea completă */
+    height: 100vh; 
+    background-image: url('../imagini/homepage.jpg'); 
+    background-size: cover; 
     height: 500px;
-    background-position: center; /* Poziționează imaginea */
-    color: white; /* Text alb */
+    background-position: center; 
+    color: white; 
     
 }
 
@@ -137,10 +136,10 @@ body, html {
 
 .features-section .container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);  /* Grilă flexibilă */
-     gap: 30px 50px; /* Spațiu între elemente */
+    grid-template-columns: repeat(3, 1fr);  
+     gap: 30px 50px; 
     justify-items: center;
-    text-align: center; /* Centrare text */
+    text-align: center;
      max-width: 1200px;
     margin: 0 auto; 
 }
@@ -161,7 +160,7 @@ body, html {
 }
 
 .feature-item img {
-    width: 60px; /* Dimensiunea pictogramelor */
+    width: 60px; 
     height: 60px;
     margin-bottom: 15px;
 }
@@ -176,51 +175,49 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: white; /* Fundal alb implicit */
-    color: black; /* Text negru implicit */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Tranziție lină */
+    background-color: white; 
+    color: black; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
-/* Container pentru butonul de switch */
 .theme-toggle {
     position: fixed;
-    top: 50%; /* Centrat pe verticală */
-    left: 5px; /* În partea stângă */
-    transform: translateY(-50%); /* Ajustare pentru centrarea completă pe verticală */
-    width: 40px; /* Lățime redusă */
-    height: 80px; /* Înălțime redusă */
+    top: 50%; 
+    left: 5px;
+    transform: translateY(-50%); 
+    width: 40px; 
+    height: 80px; 
     background-color: #333;
-    border-radius: 20px; /* Ajustare pentru forma rotunjită */
+    border-radius: 20px; 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
-    padding: 5px 0; /* Spațiu interior ajustat */
+    padding: 5px 0; 
 }
 
-/* Stil pentru simbolurile (soare și lună) */
+
 .theme-toggle .icon {
-    font-size: 16px; /* Dimensiune redusă pentru icon */
+    font-size: 16px; 
     color: white;
 }
 
 .theme-toggle .slider {
-    width: 20px; /* Dimensiune redusă a slider-ului */
-    height: 20px; /* Dimensiune redusă a slider-ului */
+    width: 20px; 
+    height: 20px; 
     background-color: #555;
     border-radius: 50%;
     transition: transform 0.3s ease;
 }
 
-/* Fundal negru */
+
 body.dark-mode {
     background-color: black;
     color: white;
 }
 
-/* Poziție slider pentru mod dark */
 body.dark-mode .theme-toggle .slider {
-    transform: translateY(30px); /* Ajustare pentru noua înălțime */
+    transform: translateY(30px); 
     background-color: red;
 }
