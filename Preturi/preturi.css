@@ -166,3 +166,37 @@ body {
 .features .status.excluded {
     color: #dc3545; 
 }
+.services-section {
+    background-color: #f8f9fa; 
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 200px; 
+    flex-wrap: wrap; 
+    
+}
+
+.service-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 150px; 
+}
+
+.service-item img {
+    width: 80px; 
+    height: auto;
+    margin-bottom: 10px; 
+}
+
+.service-item p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #333; 
+    text-align: center;
+}
