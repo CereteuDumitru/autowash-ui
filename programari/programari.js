@@ -20,9 +20,15 @@ const successContainer = document.getElementById("success-container");
 const registerForm = document.getElementById("registerForm");
 
 registerForm.addEventListener("submit", (event) => {
+    console.log("Submited");
+    console.log(successContainer)
     event.preventDefault(); 
-
+    
     formContainer.classList.add("hidden");
 
     successContainer.classList.remove("hidden");
+
 });
+function redirectToHomePage() {
+    window.location.href = "../homepage/homepage.html"; 
+}

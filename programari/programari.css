@@ -82,10 +82,34 @@ button.btn-secondary:hover {
     background: #5a6268;
 }
 
+.back-to-home {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+    color: #333; /* Text gri */
+}
+
+.back-to-home a {
+    color: #007bff; /* Link albastru */
+    text-decoration: none; /* Eliminăm sublinierea */
+    font-weight: bold;
+}
+
+.back-to-home a:hover {
+    color: #0056b3; /* Albastru mai închis la hover */
+    text-decoration: underline; /* Adaugă subliniere la hover */
+}
+button.btn-for-programari {
+    background: #6c757d;
+}
+
+button.btn-for-programari:hover {
+    background: #5a6268;
+}
 
 
 .success-container {
-    display: none; 
+    
     background: #fff;
     padding: 30px 40px;
     border-radius: 10px;

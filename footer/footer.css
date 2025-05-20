@@ -1,3 +1,10 @@
+.dark-mode footer{
+    background-color: white;
+    color: black;
+    margin-top: 2px;
+
+}
+
 
 .footer {
    background-color: black;
@@ -5,6 +12,7 @@
     padding: 40px;
     font-family: Arial, sans-serif;
 }
+
 
 .footer-container {
     display: flex;

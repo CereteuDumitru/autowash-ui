@@ -5,7 +5,10 @@ body, html {
     box-sizing: border-box;
     color: white;
 }
-
+.dark-mode .about-section{
+    background-color: white;
+    color: black;
+}
 .hero-section {
     position: relative;
     height: 100vh; 
