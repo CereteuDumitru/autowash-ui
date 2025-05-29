@@ -39,11 +39,11 @@
 
 .luxwash-info strong {
     font-weight: bold;
-    color: #ff0000; /* Evidențiere cu roșu */
+    color: #ff0000; 
 }
 .luxwash-details {
-    background-color: #ffffff; /* Fundal alb */
-    color: #000000; /* Text negru */
+    background-color: #ffffff; 
+    color: #000000; 
     padding: 50px 20px;
 }
 
@@ -51,31 +51,31 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 30px; /* Spațiu între rânduri */
-    flex-wrap: wrap; /* Pentru adaptabilitate pe ecrane mici */
+    margin-bottom: 30px; 
+    flex-wrap: wrap; 
 }
 
 .luxwash-image {
     flex: 1;
-    max-width: 45%; /* Lățime maximă pentru imagini */
+    max-width: 45%; 
     margin: 0 auto;
 }
 
 .luxwash-image img {
-    width: 100%; /* Imaginea ocupă toată lățimea containerului */
-    border-radius: 10px; /* Colțuri rotunjite pentru imagini */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Umbră pentru imagini */
+    width: 100%; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
 .luxwash-text {
     flex: 1;
-    max-width: 45%; /* Lățime maximă pentru text */
+    max-width: 45%; 
     margin: 0 auto;
-    text-align: left; /* Text aliniat la stânga */
+    text-align: left; 
 }
 
 .luxwash-text p {
-    font-size: 1rem; /* Dimensiunea textului */
-    line-height: 1.8; /* Înălțime între linii pentru lizibilitate */
+    font-size: 1rem; 
+    line-height: 1.8; 
     margin: 0;
 }
