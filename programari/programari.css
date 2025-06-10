@@ -86,18 +86,18 @@ button.btn-secondary:hover {
     text-align: center;
     margin-top: 10px;
     font-size: 0.9rem;
-    color: #333; /* Text gri */
+    color: #333; 
 }
 
 .back-to-home a {
-    color: #007bff; /* Link albastru */
-    text-decoration: none; /* Eliminăm sublinierea */
+    color: #007bff; 
+    text-decoration: none; 
     font-weight: bold;
 }
 
 .back-to-home a:hover {
-    color: #0056b3; /* Albastru mai închis la hover */
-    text-decoration: underline; /* Adaugă subliniere la hover */
+    color: #0056b3; 
+    text-decoration: underline; 
 }
 button.btn-for-programari {
     background: #6c757d;
